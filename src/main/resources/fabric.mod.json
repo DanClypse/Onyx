@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "onyx",
+	"version": "${version}",
+	"name": "Onyx",
+	"description": "DanClypse's first test mod.",
+	"authors": [
+		"DanClypse"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/onyx/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.danclypse.onyx.Onyx"
+		],
+		"fabric-datagen": [
+			"net.danclypse.onyx.OnyxDataGenerator"
+		],
+		"client": [
+			"net.danclypse.onyx.OnyxClient"
+		]
+	},
+	"mixins": [
+		"onyx.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
